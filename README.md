@@ -11,7 +11,7 @@ Full-stack web developer and MCA candidate (expected 2027). I build database-bac
 | Discover Kashi | Travel booking and CRM workflows with PayU checkout, callback verification, and payment webhooks. |
 | See U Beauty Salon | Appointment and commerce workflows with slot validation, administration, and checkout. |
 
-[LinkedIn](https://linkedin.com/in/rishi-kumar-gupta-546b821b2) · [Résumé](RISHI_RESUME.pdf)
+[Live portfolio](http://rishikumargupta.infinityfree.me/) · [LinkedIn](https://linkedin.com/in/rishi-kumar-gupta-546b821b2) · [Résumé](RISHI_RESUME.pdf)
 
 ## About this repository
 

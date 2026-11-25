@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Rishi Kumar Gupta, full-stack web developer in Varanasi. Read four client case studies on manufacturing ERP, biometric attendance, payment integration, and e-commerce.">
+  <meta name="theme-color" content="#f8f6f1">
+  <title>Rishi Kumar Gupta | Full-Stack Developer</title>
+  <script>
+    try {
+      const savedTheme = localStorage.getItem('portfolio-theme');
+      if (savedTheme === 'dark' || savedTheme === 'light') document.documentElement.dataset.theme = savedTheme;
+    } catch {}
+  </script>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="header">
+    <div class="wrap bar">
+      <a class="brand" href="#home" aria-label="Rishi Kumar Gupta, home"><span class="monogram">RG</span> <span>Rishi Gupta</span></a>
+      <nav aria-label="Main navigation"><a href="#work">Projects</a><a href="#experience">Experience</a><a href="#skills">Skills</a></nav>
+      <div class="header-actions">
+        <a class="nav-contact" href="#contact">Contact</a>
+        <button class="theme-toggle" type="button" aria-label="Dark mode" aria-pressed="false" hidden>
+          <span class="theme-icon" aria-hidden="true"></span>
+          <span>Dark</span>
+        </button>
+      </div>
+    </div>
+  </header>
+  <main id="main">
+    <section id="home" class="hero">
+      <div class="wrap hero-grid">
+        <div>
+          <p class="identity">Rishi Kumar Gupta <span>·</span> Varanasi, India</p>
+          <h1>Full-Stack<br>Web Developer<span class="accent">.</span></h1>
+          <p class="intro">I build web applications with PHP, MySQL, and JavaScript. During my internship at IdiotInnovators, I independently developed four client applications covering manufacturing operations, biometric attendance, online bookings, and payments.</p>
+          <div class="actions"><a class="button primary" href="#work">Explore projects</a><a class="button secondary" href="RISHI_RESUME.pdf" download>Download résumé</a></div>
+          <p class="hero-meta">MCA candidate · 2027 expected</p>
+        </div>
+        <figure class="portrait" aria-label="Portrait of Rishi Kumar Gupta">
+          <div class="portrait-stage">
+            <div class="portrait-scene" aria-hidden="true"></div>
+            <div class="portrait-card">
+              <img src="rishi-portrait.webp?v=formal" width="600" height="800" alt="Rishi Kumar Gupta in a navy suit and tie" fetchpriority="high">
+            </div>
+          </div>
+        </figure>
+      </div>
+    </section>
+    <section class="section wrap" id="work" aria-labelledby="work-title">
+      <h2 id="work-title">Selected projects<span class="accent">.</span></h2>
+      <p class="section-intro">Four client applications from my internship at IdiotInnovators, with a closer look at the workflows and integrations I implemented.</p>
+      <div class="projects">
+        <article class="project weave" id="weavetrack">
+          <div class="project-top"><span>Textile manufacturing ERP</span></div>
+          <h3>WeaveTrack</h3>
+          <p>A textile manufacturing ERP that brings production orders, job cards, machine assignments, inventory, sales, and invoicing into one workspace.</p>
+          <p class="contribution"><strong>What I built</strong> I implemented REST API synchronization, transactional updates, role-based permissions, and audit logging.</p>
+          <details class="case-study">
+            <summary>Implementation details</summary>
+            <p>The ERP connects production records with inventory and invoicing. Grouping related writes in a database transaction lets an update roll back if one step fails, while audit logs provide a record of changes.</p>
+          </details>
+          <ul class="tags" aria-label="Technologies"><li>PHP</li><li>MySQL</li><li>JavaScript</li><li>REST APIs</li></ul>
+        </article>
+        <article class="project gym" id="gympilot">
+          <div class="project-top"><span>Multi-tenant gym management</span></div>
+          <h3>GymPilot</h3>
+          <p>A multi-tenant platform for branch operations, memberships, subscriptions, attendance, billing, and reporting.</p>
+          <p class="contribution"><strong>What I built</strong> I built the MVC modules and integrated attendance by mapping device records to members, detecting duplicate punches, and synchronizing the results with the application.</p>
+          <details class="case-study">
+            <summary>Implementation details</summary>
+            <p>The attendance integration maps records from ZKTeco devices to member accounts, checks for duplicate punches, and synchronizes attendance records with the application.</p>
+          </details>
+          <ul class="tags" aria-label="Technologies"><li>PHP</li><li>MySQL</li><li>Tailwind CSS</li><li>Alpine.js</li><li>Python</li></ul>
+        </article>
+        <article class="project travel" id="discover-kashi">
+          <div class="project-top"><span>Travel booking &amp; CRM</span></div>
+          <h3>Discover Kashi</h3>
+          <p>Travelers can book tours, hotels, and boat rides. Staff can manage booking enquiries and site content from the same administrative area.</p>
+          <p class="contribution"><strong>What I built</strong> I built booking and CRM workflows and integrated PayU. I verified callbacks and handled payment webhooks so payment status could be recorded against bookings and receipts.</p>
+          <details class="case-study">
+            <summary>Implementation details</summary>
+            <p>PayU handles checkout. The application verifies callbacks and processes payment webhooks so the payment status can be recorded against the booking and reflected in the receipt.</p>
+          </details>
+          <ul class="tags" aria-label="Technologies"><li>PHP</li><li>MySQL</li><li>JavaScript</li><li>PayU</li></ul>
+        </article>
+        <article class="project salon" id="see-u-beauty">
+          <div class="project-top"><span>Salon booking &amp; e-commerce</span></div>
+          <h3>See U Beauty Salon</h3>
+          <p>Customers can book a salon appointment or purchase products online. Staff can maintain the catalog, courses, and staff records from the admin area.</p>
+          <p class="contribution"><strong>What I built</strong> I built slot validation, customer accounts, cart, coupon, and checkout workflows. I also used prepared SQL statements and CSRF validation in application workflows.</p>
+          <details class="case-study">
+            <summary>Implementation details</summary>
+            <p>Appointment booking validates the selected slot. The shopping workflow handles products, coupons, and orders, while the admin area lets staff manage staff records, products, and courses.</p>
+          </details>
+          <ul class="tags" aria-label="Technologies"><li>PHP</li><li>MySQL</li><li>JavaScript</li></ul>
+        </article>
+      </div>
+    </section>
+    <section class="section band" id="approach" aria-labelledby="approach-title">
+      <div class="wrap split">
+        <div><h2 id="approach-title">How I build<span class="accent">.</span></h2><p class="section-intro">I start with the business process, then work through the data and integrations it depends on.</p></div>
+        <div class="timeline">
+          <article><h3>Start with the workflow</h3><p>I map the steps, the people involved, and the records each step changes. In <a href="#weavetrack">WeaveTrack</a>, that meant linking production orders and job cards to inventory and invoicing.</p></article>
+          <article><h3>Protect the business record</h3><p>I consider who can change a record, which inputs need validation, and which updates belong together. <a href="#weavetrack">WeaveTrack</a> uses permissions and transactions, while <a href="#see-u-beauty">See U Beauty Salon</a> validates appointment slots.</p></article>
+          <article><h3>Verify data from external systems</h3><p>Payment gateways and biometric devices send events the application has to interpret. <a href="#discover-kashi">Discover Kashi</a> verifies payment callbacks, and <a href="#gympilot">GymPilot</a> maps device punches to members and checks for duplicates.</p></article>
+        </div>
+      </div>
+    </section>
+    <section class="section wrap" id="experience" aria-labelledby="experience-title">
+      <div class="split">
+        <div><p class="label">CAREER</p><h2 id="experience-title">Experience<span class="accent">.</span></h2></div>
+        <div class="timeline">
+          <article><p class="meta">May 2026 – October 2026 · On-site, Varanasi</p><h3>Web Developer Intern</h3><p class="organization">IdiotInnovators Research and Development</p><p>Developed customer-facing interfaces, administrative modules, and MySQL-backed workflows across four client projects. Integrated PayU for travel bookings and ZKTeco devices for gym attendance.</p></article>
+          <article><p class="meta">January 2025 – February 2026 · Varanasi</p><h3>Senior Sales Officer</h3><p class="organization">Paytm Services Pvt. Ltd.</p><p>Generated merchant leads, converted prospects, and coordinated point-of-sale terminal installations.</p></article>
+          <article><p class="meta">January 2014 – December 2015 · Varanasi</p><h3>Field Sales Executive</h3><p class="organization">Airtel</p><p>Handled field sales and local marketing for telecom services, with a focus on customer acquisition.</p></article>
+        </div>
+      </div>
+    </section>
+    <section class="section wrap" id="skills" aria-labelledby="skills-title">
+      <h2 id="skills-title">Technical skills<span class="accent">.</span></h2>
+      <div class="skill-grid">
+        <article><h3>Core development</h3><p>PHP, JavaScript, SQL, HTML5, and CSS3 for database-backed web applications. Additional languages include Python, Java, C, and C++.</p></article>
+        <article><h3>Frameworks &amp; architecture</h3><p>Bootstrap, Tailwind CSS, MVC, REST APIs, AJAX, JSON, OOP, DSA</p><p class="muted">Foundational: React.js and Laravel</p></article>
+        <article><h3>Data &amp; security</h3><p>MySQL and relational data modeling, with authentication, role-based access control, CSRF validation, and prepared statements. See <a href="#weavetrack">WeaveTrack</a> and <a href="#see-u-beauty">See U Beauty Salon</a> for examples.</p></article>
+        <article><h3>Tools &amp; deployment</h3><p>Git, GitHub, Linux, SSH, SSL/TLS, VPS, cPanel, Hostinger, VS Code, Postman, XAMPP</p></article>
+      </div>
+    </section>
+    <section class="section band" aria-labelledby="education-title">
+      <div class="wrap split">
+        <div><p class="label">ACADEMICS</p><h2 id="education-title">Education<span class="accent">.</span></h2></div>
+        <div class="timeline">
+          <article><p class="meta">2025 – 2027 (expected) · CGPA 7.5</p><h3>Master of Computer Applications</h3><p>Rajarshi School of Management and Technology, Varanasi<br>Dr. A. P. J. Abdul Kalam Technical University</p></article>
+          <article><p class="meta">2021 – 2024</p><h3>Bachelor of Computer Applications</h3><p>Mahadev P.G. College, Bariyasanpur, Varanasi<br>Mahatma Gandhi Kashi Vidyapith</p></article>
+          <article><p class="meta">2019 · A+</p><h3>ADCA</h3><p>Royal Navoday Compute Institute</p></article>
+          <article><h3>UP Board</h3><p>Class XII (2019) · Class X (2017)</p></article>
+        </div>
+      </div>
+    </section>
+    <section class="section wrap" id="contact" aria-labelledby="contact-title">
+      <div class="contact">
+        <p class="label">CONTACT</p><h2 id="contact-title">Let’s talk<span class="accent">.</span></h2>
+        <p>I’m an MCA candidate seeking early-career full-stack and software development roles. Contact me to discuss an opportunity or walk through one of my client projects.</p>
+        <div class="actions"><a class="button primary" href="mailto:rishigupta221007@gmail.com">Email me</a><a class="button secondary" href="https://linkedin.com/in/rishi-kumar-gupta-546b821b2">LinkedIn</a><a class="button secondary" href="https://github.com/Rishirr7057">GitHub</a></div>
+        <ul class="contact-details"><li><a href="mailto:rishigupta221007@gmail.com">rishigupta221007@gmail.com</a></li><li><a href="tel:+917080022270">+91 70800 22270</a></li></ul>
+      </div>
+    </section>
+  </main>
+  <footer class="wrap footer"><span>Rishi Kumar Gupta · Varanasi, Uttar Pradesh</span><a href="#home">Back to top</a></footer>
+  <script type="module" src="motion.js"></script>
+</body>
+</html>
